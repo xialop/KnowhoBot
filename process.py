@@ -54,7 +54,7 @@ def truecaller_search(token, num):
     }
     requests.post(g, headers=h, timeout=5, data={"reason": "restored_from_account_manager"})
 
-    turl = "https://search5-noneu.truecaller.com/v2/search?q=" + num + "&countryCode=IN&type=4&locAddr=&placement=SEARCHRESULTS%2CHISTORY%2CDETAILS&encoding=json"
+    turl = "https://search5-noneu.truecaller.com/v2/search?q=" + num + "&countryCode=IR&type=4&locAddr=&placement=SEARCHRESULTS%2CHISTORY%2CDETAILS&encoding=json"
     theaders = {
         "user-agent": "Truecaller/11.5.7 (Android;10)",
         "Accept-Encoding": "gzip",
@@ -66,7 +66,7 @@ def truecaller_search(token, num):
     return tresponse
 
 def eyecon_search(num):
-    url = "https://api.eyecon-app.com/app/getnames.jsp?cli=91" + num + "&lang=en&is_callerid=true&is_ic=true&cv=vc_312_vn_2.0.312_a&requestApi=URLconnection&source=Other"
+    url = "https://api.eyecon-app.com/app/getnames.jsp?cli=98" + num + "&lang=en&is_callerid=true&is_ic=true&cv=vc_312_vn_2.0.312_a&requestApi=URLconnection&source=Other"
     headers = {
         "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; GM1903 Build/QKQ1.190716.003)",
         "Accept": "application/json",
@@ -82,7 +82,7 @@ def eyecon_search(num):
     return response
 
 def fb_search(num):
-    fburl = "https://api.eyecon-app.com/app/pic?cli=91" + num + "&is_callerid=true&size=big&type=0&cancelfresh=0&cv=vc_312_vn_2.0.312_a"
+    fburl = "https://api.eyecon-app.com/app/pic?cli=98" + num + "&is_callerid=true&size=big&type=0&cancelfresh=0&cv=vc_312_vn_2.0.312_a"
     fbheaders = {
         "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; GM1903 Build/QKQ1.190716.003)",
         "Accept": "application/json",
